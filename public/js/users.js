@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const editOverlay = document.getElementById('editOverlay');
     const editNameInput = document.getElementById('editName');
     const editPriceInput = document.getElementById('editPrice');
-    
+   
     
     // shows the edit layout (start point)
     function editGoal(goal) {
@@ -66,6 +66,8 @@ document.addEventListener("DOMContentLoaded", function () {
         editOverlay.style.display = "block";
         editNameInput.value = goal.name;
         editPriceInput.value = goal.price;
+
+        console.log(editPriceInput.value);
     }
     
     // handles save event
@@ -92,6 +94,10 @@ document.addEventListener("DOMContentLoaded", function () {
               const goalElement = document.querySelector(`.editBtn[data-id="${currentEditingId}"]`).closest('li');
               goalElement.querySelector('h3').textContent = updatedGoal.name;
               goalElement.querySelector('.price').textContent = `${updatedGoal.price}$`;
+
+              // it still requires refresh for the proper work since 
+              // values of html element are not being updated fully 
+              // but it is fine for single dream editing
             })
             .catch(error => console.error('Error updating goal:', error));
         }
