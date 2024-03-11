@@ -1,10 +1,11 @@
 html
   head
-    title Users Management
+    title Dream Management
     link(rel='stylesheet', href='/css/users.css') 
+    link(rel='icon', href='images/plov-icon.png')
   body
     div.top
-        h1 Users Management Page
+        h1 Dreams Management Page
         a(href='#') Create
 
     div.main
@@ -13,7 +14,7 @@ html
 
     div#editOverlay
         h2 Edit Goal
-        form(id='editForm' onsubmit='updateGoal(); return false;')
+        form(id='editForm')
             label(for='editName') Name:
             input(type='text' id='editName' name='editName' required)
             label(for='editPrice') Price:
