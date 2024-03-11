@@ -1,5 +1,20 @@
 [
-    {"name": "BMW e60", "price": 13900, "img": "bmw_e60.jpg"},
-    {"name": "Mercedes CLS 63 AMG", "price": 36000, "img": "cls.png"},
-    {"name": "House in Dubai", "price": 125000, "img": "house.jpg"}
+  {
+    "id": 0,
+    "name": "BMW e60",
+    "price": "13900",
+    "img": "bmw_e60.jpg"
+  },
+  {
+    "id": 1,
+    "name": "Mercedes CLS 63 AMG",
+    "price": "36000",
+    "img": "cls.png"
+  },
+  {
+    "id": 2,
+    "name": "House in Dubai",
+    "price": 125000,
+    "img": "house.jpg"
+  }
 ]

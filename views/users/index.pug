@@ -1,0 +1,23 @@
+html
+  head
+    title Users Management
+    link(rel='stylesheet', href='/css/users.css') 
+  body
+    div.top
+        h1 Users Management Page
+        a(href='#') Create
+
+    div.main
+        ul(id='goalsList')
+
+
+    div#editOverlay
+        h2 Edit Goal
+        form(id='editForm' onsubmit='updateGoal(); return false;')
+            label(for='editName') Name:
+            input(type='text' id='editName' name='editName' required)
+            label(for='editPrice') Price:
+            input(type='number' id='editPrice' name='editPrice' required)
+            button(class="send-data") Update
+
+    script(src='/js/users.js')

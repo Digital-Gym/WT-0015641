@@ -4,11 +4,6 @@ const path = require('path');
 const fs = require('fs/promises');
 
 
-router.get('/', (req, res) => {
-  res.render('index');
-});
-
-
 router.get('/api/cards', async (req, res) => {
     try {
       const jsonPath = path.join(__dirname, '..', 'data', 'db.json');
@@ -19,7 +14,8 @@ router.get('/api/cards', async (req, res) => {
       console.error(error);
       res.status(500).json({ error: 'Internal Server Error' });
     }
-  });
+});
+
 
 
 module.exports = router;

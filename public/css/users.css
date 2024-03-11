@@ -1,0 +1,90 @@
+@import url("main.css");
+
+/* ======= TOP ============ */
+.top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+
+.top a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5rem;
+    border: solid 2px var(--border-color);
+    border-radius: 15px;
+    width: 100px;
+    color: black;
+
+}
+
+/* ========== MAIN ========= */
+.main{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* border: solid 1px green; */
+}
+
+.main ul{
+    margin: 0;
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 90%;
+    /* border: solid 1px red; */
+}
+
+.main ul li{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: solid 1px black;
+    border-radius: 15px;
+}
+
+.main ul li div{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    width: 15%;
+}
+
+.first{
+    margin-left: 15px;
+}
+
+/* ======= edit overlay=== */
+#editOverlay{
+    position:absolute;
+    z-index: 100;
+    width: 20%;
+    height: 20rem;
+    background-color: white;
+    top: 10%;
+    left: 78%;
+    display: none;
+
+    border: solid 1px black;
+    border-radius: 15px;
+
+}
+
+#editOverlay h2{
+    margin-left: 25px;
+}
+
+#editForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.5em;
+}

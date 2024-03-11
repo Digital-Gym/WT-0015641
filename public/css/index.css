@@ -3,8 +3,9 @@
 .warning{
     position:absolute;
     z-index: 100;
-    opacity: 65%;
-    font-size: 0.95rem;
+    opacity: 90%;
+    font-size: 1.2rem;
+    top: 120%;
     left: 33%;
 }
 
@@ -16,14 +17,14 @@
     gap: 70%;
 }
 
-.navbar a{
+.navbar #playMusicBtn{
     display: flex;
     align-items: center;
     text-decoration: none;
     color: black;
 }
 
-.navbar a h1{
+.navbar #playMusicBtn h1{
     font-size: 2.3rem;
     margin-left: 5px;
 }
@@ -32,7 +33,12 @@
     width: 95px;
 }
 
-.navbar button{
+.navbar .btn{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     width: 170px;
     height: 50px;
     font-family: "Amatic SC", sans-serif;
@@ -44,13 +50,13 @@
     color: rgba(0, 0, 0, 0.85);
 }
 
-.navbar button:hover{
+.navbar .btn:hover{
     border-width: 3px;
     transform: scale(1.05);
     transition: padding, transform .5s ease;
 }
 
-.navbar a:hover #icon{
+.navbar #playMusicBtn:hover #icon{
     transform: scale(1.05);
     transition: transform .5s ease;
 }
