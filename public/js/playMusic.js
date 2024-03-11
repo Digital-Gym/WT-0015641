@@ -1,3 +1,5 @@
+// I DO NOT KNOW WHY DID I ADD THIS xD
+
 document.addEventListener("DOMContentLoaded", function () {
     const playMusicBtn = document.getElementById("playMusicBtn");
     let isPlaying = false; 

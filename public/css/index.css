@@ -1,5 +1,13 @@
 @import url("main.css");
 
+.warning{
+    position:absolute;
+    z-index: 100;
+    opacity: 65%;
+    font-size: 0.95rem;
+    left: 33%;
+}
+
 /* ========= NAVBAR ============ */
 .navbar{
     display: flex;
