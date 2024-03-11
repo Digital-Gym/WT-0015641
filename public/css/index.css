@@ -1,0 +1,46 @@
+@import url("main.css");
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 70%;
+}
+
+.navbar a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar a h1{
+    font-size: 2.3rem;
+    margin-left: 5px;
+}
+
+#icon{
+    width: 95px;
+}
+
+.navbar button{
+    width: 150px;
+    height: 50px;
+    font-family: "Amatic SC", sans-serif;
+    border: solid 2px rgba(240, 134, 20, 0.907);
+    border-radius: 10px;
+    font-size: 1.9rem;
+    font-weight: 550;
+    background-color: transparent;
+}
+
+.navbar button:hover{
+    border-width: 3px;
+    transform: scale(1.05);
+    transition: padding, transform .5s ease;
+}
+
+.navbar a:hover #icon{
+    transform: scale(1.05);
+    transition: transform .5s ease;
+}
