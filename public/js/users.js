@@ -66,8 +66,6 @@ document.addEventListener("DOMContentLoaded", function () {
         editOverlay.style.display = "block";
         editNameInput.value = goal.name;
         editPriceInput.value = goal.price;
-
-        console.log(editPriceInput.value);
     }
     
     // handles save event
