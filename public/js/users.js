@@ -96,10 +96,21 @@ document.addEventListener("DOMContentLoaded", function () {
             .catch(error => console.error('Error updating goal:', error));
         }
     }
-    
+
 
     function deleteGoal(goalId) {
-        console.log(`Delete button clicked for goal with ID ${goalId}`);
+        // Send delete request
+        fetch(`users/api/cards/${goalId}`, {
+            method: 'DELETE',
+        })
+        .then(response => response.json())
+        .then(deletedGoal => {
+            console.log(deletedGoal);
+            // Optimized Refreshing
+            const goalElement = document.querySelector(`.deleteBtn[data-id="${goalId}"]`).closest('li');
+            goalElement.remove();
+        })
+        .catch(error => console.error('Error deleting goal:', error));
     }
 });
 

@@ -7,7 +7,7 @@ const indexRouter = require('./routes/index');
 const indexController = require('./controllers/index'); 
 
 const userRouter = require('./routes/users/index'); 
-const updateController = require('./controllers/users/update'); 
+const userIndexController = require('./controllers/users/index'); 
 
 app.set('view engine', 'pug');
 
@@ -15,8 +15,7 @@ app.set('view engine', 'pug');
 app.use(express.json());
 
 app.use('/', indexRouter, indexController); 
-app.use('/users', userRouter, updateController);
-
+app.use('/users', userRouter, userIndexController);
 
 
 // serve static files
