@@ -4,4 +4,6 @@ body{
     background-color: white;
     font-family: "Amatic SC", sans-serif;
     font-style: normal;
+
+    overflow-x: hidden;
 }

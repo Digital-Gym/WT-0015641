@@ -1,5 +1,5 @@
 [
     {"name": "BMW e60", "price": 12000, "img": "bmw_e60.jpg"},
-    {"name": "Playstation 5", "price": 500, "img": "ps5.jpg"},
+    {"name": "Mercedes CLS 63 AMG", "price": 500, "img": "cls.png"},
     {"name": "House in Dubai", "price": 125000, "img": "house.jpg"}
 ]

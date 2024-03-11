@@ -4,9 +4,26 @@ html
 
     link(rel='icon', href='images/plov-icon.png')
     link(rel='stylesheet', href='css/index.css')
+    
+    link(rel='stylesheet', href='css/slick/slick.css')
+    link(rel='stylesheet', href='css/slick/slick-theme.css')
+
+    script(src="//code.jquery.com/jquery-1.11.0.min.js")
+    script(src="//code.jquery.com/jquery-migrate-1.2.1.min.js")
+    script(src="js/slick/slick.min.js")
+
   body
     nav.navbar
       a(href="#")
         img#icon(src='images/plov-icon.png', alt='Plov icon')
         h1 PlovSaver
-      button Add a dream
+      button Manage dreams
+    
+    div.main
+      h2#title Find out how many portions of pilaf your dreams are worth
+      div.dreams
+        // smth
+      div.output
+        // output
+
+script(src='js/carousel.js')
