@@ -40,8 +40,8 @@ document.addEventListener("DOMContentLoaded", function () {
                         <div>
                             <p class="price">${goal.price}$</p>
                             <span>
-                                <button type="button" class="editBtn" data-id="${goal.id}" data-name="${goal.name}" data-price="${goal.price}">Edit</button>
-                                <button type="button" class="deleteBtn" data-id="${goal.id}">Delete</button>
+                                <button type="button" class="but editBtn" data-id="${goal.id}" data-name="${goal.name}" data-price="${goal.price}">Edit</button>
+                                <button type="button" class="but deleteBtn" data-id="${goal.id}">Delete</button>
                             </span>
                         </div>
                     `;

@@ -88,3 +88,23 @@
     align-items: center;
     gap: 0.5em;
 }
+
+.but{
+    background-color: transparent;
+    border: solid 2px black;
+    border-radius: 10px;
+    width: 60px;
+    height: 30px;
+}
+
+.editBtn{
+    border-color: skyblue;
+}
+
+.deleteBtn{
+    border-color: orangered;
+}
+
+.but:hover, .top a:hover{
+    filter: brightness(0.8); 
+}
