@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const dreamsContainer = document.querySelector('.dreams');
     const outputContainer = document.querySelector('.output');
 
-    // Генерация карточек
+    // Card generation start
     function generateCards(cards) {
         dreamsContainer.innerHTML = '';
 
@@ -22,20 +22,27 @@ document.addEventListener("DOMContentLoaded", function () {
             `;
 
             cardElement.addEventListener('click', () => {
-                // При клике на карточку можно изменять контент в div.output
+                // output html 
                 outputContainer.innerHTML = `
-                    <p>Initial: ${card.price}</p>
-                    <p>How many plov: ${card.price / 2.40} (${card.price*12496.40} сум)</p>
+                    <p>In order to afford <b>${card.name}</b>, you need to sacrifice
+                        <div class="plov-counter">
+                            <img class="iconcha" src="images/plov-icon.png" alt="plov-icon">
+                            <p>x${Math.round(card.price / 2.40)} servings of delicious pilaf</p>
+                        </div>
+                    </p>
+                    <br>
+                    <p>(Assuming that 1 serving costs 30.000 sum or 2.40$)</p>
                 `;
             });
 
             dreamsContainer.appendChild(cardElement);
         });
 
-        // Инициализация Slick Carousel
+        // slick carousel init
+        // check here: https://github.com/kenwheeler/slick/
         $('.dreams').slick({
-            slidesToShow: 5, // Количество отображаемых слайдов
-            slidesToScroll: 1, // Количество прокручиваемых слайдов
+            slidesToShow: 5, 
+            slidesToScroll: 1,
             prevArrow: '<button type="button" class="slick-prev">prev</button>',
             nextArrow: '<button type="button" class="slick-next">next</button>',
             autoplay: true,
@@ -44,8 +51,8 @@ document.addEventListener("DOMContentLoaded", function () {
         
     }
 
-    // Используем fetch для получения данных
-    fetch('/api/cards') // Путь к вашему маршруту, обрабатывающему запрос на получение данных
+    // fetch data using fetch
+    fetch('/api/cards') // bro uses rest
         .then(response => response.json())
         .then(cards => generateCards(cards))
         .catch(error => console.error('Error fetching data:', error));

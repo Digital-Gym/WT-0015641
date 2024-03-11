@@ -8,13 +8,16 @@ html
     link(rel='stylesheet', href='css/slick/slick.css')
     link(rel='stylesheet', href='css/slick/slick-theme.css')
 
+    // carousel logic
     script(src="//code.jquery.com/jquery-1.11.0.min.js")
     script(src="//code.jquery.com/jquery-migrate-1.2.1.min.js")
     script(src="js/slick/slick.min.js")
 
+    // music on click
+    script(src='js/playMusic.js')
   body
     nav.navbar
-      a(href="#")
+      a(href="#" id="playMusicBtn")
         img#icon(src='images/plov-icon.png', alt='Plov icon')
         h1 PlovSaver
       button Manage dreams

@@ -28,7 +28,7 @@
     width: 170px;
     height: 50px;
     font-family: "Amatic SC", sans-serif;
-    border: solid 2px rgba(240, 134, 20, 0.907);
+    border: solid 2px var(--border-color);
     border-radius: 10px;
     font-size: 1.9rem;
     font-weight: 550;
@@ -86,7 +86,8 @@
 
 .wrapper{
     overflow: hidden;
-    border: solid 2px skyblue;
+    /* border: solid 2px skyblue; */
+    border: solid 2px var(--border-color);
     border-radius: 15px;
 
     height: 95%;
@@ -101,6 +102,10 @@
 .wrapper:hover .img{
     transform: scale(1.05);
     transition: transform .5s ease;
+}
+
+.wrapper:hover{
+    cursor: pointer;
 }
 
 .info{
@@ -120,3 +125,22 @@
 }
 
 /* ======= OUTPUT ========== */
+.output{
+    font-size: 1.7rem;
+    text-align: center;
+    line-height: 0.8;
+}
+
+.plov-counter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plov-counter p{
+    margin-left: 5px;
+}
+
+.iconcha{
+    width: 40px;
+}

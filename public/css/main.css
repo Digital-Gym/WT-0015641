@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 
+:root{
+    --border-color: rgb(243, 155, 24);
+}
+
 body{
     background-color: white;
     font-family: "Amatic SC", sans-serif;
