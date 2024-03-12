@@ -9,6 +9,12 @@ document.addEventListener("DOMContentLoaded", function () {
         const newPrice = document.getElementById('createPrice');
         const newImage = document.getElementById('createImage');
 
+        if (newImage.files[0].size > 5000000){
+            newImage.value = '';
+            alert('File size exceeds the allowed limit of 5 MB');
+            return
+        }
+
         let formData = new FormData();
 
         formData.append('name', newName.value);

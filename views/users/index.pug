@@ -17,9 +17,9 @@ html
         h2 Edit Goal
         form(id='editForm')
             label(for='editName') Name:
-            input(type='text' id='editName' name='editName' required)
+            input(type='text' id='editName' name='editName' required maxlength='50')
             label(for='editPrice') Price:
-            input(type='number' id='editPrice' name='editPrice' required)
+            input(type='number' id='editPrice' name='editPrice' required maxlength='100')
             button(class="send-data") Update
 
     script(src='/js/users.js')

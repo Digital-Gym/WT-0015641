@@ -9,9 +9,9 @@ html
 
     form#createForm(action="/users/create/api/cards" method="POST" enctype="multipart/form-data")
         label(for="createName") Name:
-        input#createName(type="text" name="name" required)
+        input#createName(type="text" name="name" required maxlength='50')
         label(for="createPrice") Price:
-        input#createPrice(type="number" name="price" required)
+        input#createPrice(type="number" name="price" required maxlength='100')
         label(for="createImage") Image:
         input#createImage(type="file" name="img" accept="image/*" required)
         button(type="submit") Create Goal
