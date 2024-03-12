@@ -1,5 +1,8 @@
+<!-- GITHUB LINK https://github.com/Digital-Gym/WT-0015641 -->
+<!-- SEARCH for deploy on the repo -->
+
 <div align='center'>
-  <h1>Plov Saver</h1>
+  <a href="https://github.com/Digital-Gym/WT-0015641"><h1>Plov Saver</h1></a>
   <div align='center'>
     <img align='center' src="https://github.com/Digital-Gym/WT-0015641/blob/main/public/images/plov-icon.png" width=400>
   </div>
