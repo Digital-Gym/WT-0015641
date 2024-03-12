@@ -16,5 +16,11 @@
     "name": "House in Dubai",
     "price": 125000,
     "img": "house.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Audi RS7",
+    "price": "165400",
+    "img": "1710224423106.jpg"
   }
 ]
