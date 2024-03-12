@@ -1,0 +1,23 @@
+@import url("main.css");
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#createForm{
+    width: 30%;
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#createForm input{
+    border-radius: 15px;
+    height: 40px;
+    padding-left: 20px;
+}
