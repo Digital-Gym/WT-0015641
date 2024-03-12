@@ -16,11 +16,5 @@
     "name": "House in Dubai",
     "price": 125000,
     "img": "house.jpg"
-  },
-  {
-    "id": 3,
-    "name": "Eat a plov",
-    "price": "30000",
-    "img": "1710223344150.png"
   }
 ]
