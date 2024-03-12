@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <br>
                     <p>(Assuming that 1 serving costs 30.000 sum or 2.40$)</p>
                 `;
+                outputContainer.scrollIntoView({ behavior: 'smooth' });
             });
 
             dreamsContainer.appendChild(cardElement);
@@ -41,12 +42,38 @@ document.addEventListener("DOMContentLoaded", function () {
         // slick carousel init
         // check here: https://github.com/kenwheeler/slick/
         $('.dreams').slick({
-            slidesToShow: 5, 
+            slidesToShow: 1, 
             slidesToScroll: 1,
             prevArrow: '<button type="button" class="slick-prev">prev</button>',
             nextArrow: '<button type="button" class="slick-next">next</button>',
             autoplay: true,
+            mobileFirst:true,
             autoplaySpeed: 4000,
+            responsive: [
+                {
+                  breakpoint: 1024,
+                  settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                  }
+                },
+                {
+                  breakpoint: 600,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                  }
+                },
+                {
+                  breakpoint: 480,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                  }
+                }
+              ]
         });
         
     }

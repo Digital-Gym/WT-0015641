@@ -158,3 +158,36 @@
 .iconcha{
     width: 40px;
 }
+
+
+/* ====== MOBILE ====== */
+@media (max-width: 600px) {
+    #playMusicBtn{
+        font-size: 2rem;
+    }
+    .navbar{
+        gap: 10%;
+    }
+    .navbar .btn{
+        font-size: 1.2rem;
+        width: 100px;
+        height: 50px;
+    }
+    .main{
+        text-align: center;
+    }
+    .dreams{
+        margin-top: 10px;
+        width: 90%;
+        height: 26rem;
+        overflow-x: hidden;
+    }
+
+    .card{
+        margin-left: 10px;
+    }
+
+    .warning{
+        top: 220%;
+    }
+}
